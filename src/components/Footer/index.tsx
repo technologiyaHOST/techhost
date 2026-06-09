@@ -90,6 +90,21 @@ const Footer = () => {
                       Privacy Policy
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/locations/web-development-company-in-noida" className="inline-block text-sm font-medium text-body-color hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors">
+                      Noida Web Dev
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/locations/software-development-company-in-greater-noida" className="inline-block text-sm font-medium text-body-color hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors">
+                      Gr. Noida Software
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/locations/ai-development-company-in-delhi-ncr" className="inline-block text-sm font-medium text-body-color hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors">
+                      Delhi NCR AI
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

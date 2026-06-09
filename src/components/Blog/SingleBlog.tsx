@@ -15,7 +15,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
           <span className="bg-primary absolute top-6 right-6 z-20 inline-flex items-center justify-center rounded-full px-4 py-1.5 text-sm font-semibold text-white capitalize shadow-md">
             {tags[0]}
           </span>
-          <Image src={image} alt="image" fill className="object-cover transition duration-500 group-hover:scale-105" />
+          <Image src={image} alt={title || "TechHost technology blog post"} fill className="object-cover transition duration-500 group-hover:scale-105" />
         </Link>
         <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8 flex-grow flex flex-col">
           <h3>

@@ -16,7 +16,7 @@ const Hero = () => {
                   AI-Powered Technology Solutions
                 </span>
                 <h1 className="mb-5 text-4xl font-extrabold leading-tight text-black dark:text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight tracking-tight">
-                  Empowering Businesses with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Innovative</span> Technology Solutions
+                  Technology Solutions for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Modern</span> Businesses
                 </h1>
                 <p className="mb-12 text-lg leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl max-w-3xl mx-auto">
                   We help businesses accelerate growth through custom software development, AI automation, cloud infrastructure, and digital transformation services.

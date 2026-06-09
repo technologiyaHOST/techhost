@@ -114,7 +114,7 @@ const BlogSidebarPage = () => {
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
                       <Image
                         src="/images/blog/blog-details-01.jpg"
-                        alt="image"
+                        alt="Digital workspace with modern UI/UX design tools on screen"
                         fill
                         className="h-full w-full object-cover object-center"
                       />

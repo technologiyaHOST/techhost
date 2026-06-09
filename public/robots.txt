@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.techhost.site
+
+# Sitemaps
+Sitemap: https://www.techhost.site/sitemap.xml

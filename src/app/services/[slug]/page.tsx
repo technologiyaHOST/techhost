@@ -3,10 +3,7 @@ import { Metadata } from "next";
 import { FadeInUp, FadeIn, HoverCard } from "@/components/AnimatedWrapper";
 import { CheckCircle2, ChevronRight, Database, Layout, Server, Sparkles, Box, Clock, Users } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Service | TechHost",
-  description: "TechHost service details",
-};
+
 
 const servicesData = [
   {
@@ -154,6 +151,23 @@ const servicesData = [
     industryTags: ['AWS', 'Azure', 'Google Cloud Platform', 'Vercel', 'DigitalOcean']
   }
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const service = servicesData.find((s) => s.slug === resolvedParams.slug);
+
+  if (!service) {
+    return {
+      title: "Service Not Found | TechHost",
+      description: "The requested service could not be found.",
+    };
+  }
+
+  return {
+    title: `${service.heroTitle} | TechHost`,
+    description: service.heroDescription.substring(0, 160),
+  };
+}
 
 const technologies = [
   { category: 'Frontend', icon: Layout, list: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS'] },

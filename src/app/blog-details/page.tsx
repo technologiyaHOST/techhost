@@ -111,10 +111,10 @@ const BlogDetailsPage = () => {
                   <div className="mb-10 w-full overflow-hidden rounded-sm">
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
                       <Image
-                        src="/images/blog/blog-details-02.jpg"
-                        alt="image"
+                        src="/images/blog/blog-details-01.jpg"
+                        alt="Digital workspace with modern UI/UX design tools on screen"
                         fill
-                        className="object-cover object-center"
+                        className="h-full w-full object-cover object-center"
                       />
                     </div>
                   </div>

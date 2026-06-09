@@ -12,9 +12,16 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TechHost | Technology Services Company",
-  description: "TechHost provides complete technology solutions, including web development, mobile applications, AI-powered systems, cloud infrastructure, and custom software services for businesses of all sizes.",
-  // other metadata
+  title: "TechHost | Web Development, AI & Software Solutions",
+  description: "TechHost provides web development, AI automation, SaaS development, cloud solutions, and digital transformation services.",
+  keywords: [
+    "web development",
+    "software company",
+    "AI automation",
+    "MERN development",
+    "cloud solutions",
+    "custom software"
+  ],
 };
 
 export default function Home() {
