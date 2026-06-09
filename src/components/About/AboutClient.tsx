@@ -38,24 +38,24 @@ const coreValues = [
 
 const team = [
   {
-    name: "Elena Rodriguez",
+    name: "Rahul Sharma",
     role: "Chief Executive Officer",
-    image: "/images/blog/author-01.png"
+    image: "/images/about/RahulSharma.jpeg"
   },
   {
-    name: "James Chen",
+    name: "Abhay Singh",
     role: "Chief Technology Officer",
-    image: "/images/blog/author-02.png"
+    image: "/images/about/AbhaySingh.jpeg"
   },
   {
-    name: "Sarah Jenkins",
+    name: "Amit Kashyap",
     role: "VP of Engineering",
-    image: "/images/blog/author-03.png"
+    image: "/images/about/AmitKashyap.jpeg"
   },
   {
-    name: "Michael Torres",
+    name: "Anshika Singh",
     role: "Head of Cloud Infrastructure",
-    image: "/images/blog/author-01.png"
+    image: "/images/about/AnshikaSharma.jpeg"
   }
 ];
 
