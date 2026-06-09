@@ -1,6 +1,7 @@
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import { FadeInUp } from "@/components/AnimatedWrapper";
 
 const testimonialData: Testimonial[] = [
   {
@@ -36,15 +37,24 @@ const Testimonials = () => {
   return (
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-          center
-        />
+        <FadeInUp>
+          <div className="text-center mb-6">
+             <span className="inline-block px-4 py-1.5 text-sm font-semibold tracking-wider text-primary bg-primary/10 rounded-full border border-primary/20">
+               What Our Clients Say
+             </span>
+          </div>
+          <SectionTitle
+            title="Trusted by Businesses Worldwide"
+            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            center
+          />
+        </FadeInUp>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonialData.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+          {testimonialData.map((testimonial, idx) => (
+            <FadeInUp key={testimonial.id} delay={idx * 0.1}>
+              <SingleTestimonial testimonial={testimonial} />
+            </FadeInUp>
           ))}
         </div>
       </div>

@@ -1,26 +1,17 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-
 import { Metadata } from "next";
+import AboutClient from "@/components/About/AboutClient";
 
 export const metadata: Metadata = {
-  title: "About Page | Free Next.js Template for Startup and SaaS",
-  description: "This is About Page for Startup Nextjs Template",
-  // other metadata
+  title: "About Us | TechHost Solutions",
+  description:
+    "Learn about TechHost, an enterprise technology partner specializing in cloud infrastructure, AI solutions, and custom software development.",
+  keywords: "about techhost, enterprise technology partner, cloud solutions provider, custom software company",
 };
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
-    <>
-      <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
-      <AboutSectionOne />
-      <AboutSectionTwo />
-    </>
+    <main>
+      <AboutClient />
+    </main>
   );
-};
-
-export default AboutPage;
+}

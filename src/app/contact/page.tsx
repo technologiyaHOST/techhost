@@ -1,25 +1,17 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/components/Contact";
-
 import { Metadata } from "next";
+import ContactClient from "@/components/Contact/ContactClient";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
-  // other metadata
+  title: "Contact TechHost | Let's Build Something Great Together",
+  description:
+    "Get in touch with TechHost to discuss software development, AI solutions, cloud infrastructure, and digital transformation projects.",
+  keywords: "contact software company, technology consulting, AI development company, cloud consulting, software development services, TechHost contact",
 };
 
-const ContactPage = () => {
+export default function ContactPage() {
   return (
-    <>
-      <Breadcrumb
-        pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
-
-      <Contact />
-    </>
+    <main>
+      <ContactClient />
+    </main>
   );
-};
-
-export default ContactPage;
+}

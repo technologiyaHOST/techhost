@@ -3,6 +3,7 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import { FadeInUp } from "@/components/AnimatedWrapper";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -10,12 +11,19 @@ const Pricing = () => {
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-          center
-          width="665px"
-        />
+        <FadeInUp>
+          <div className="text-center mb-6">
+             <span className="inline-block px-4 py-1.5 text-sm font-semibold tracking-wider text-primary bg-primary/10 rounded-full border border-primary/20">
+               Simple and Affordable Pricing
+             </span>
+          </div>
+          <SectionTitle
+            title="Choose the Right Plan"
+            paragraph="Find the perfect technology solution package that fits your business goals and scales with your growth."
+            center
+            width="665px"
+          />
+        </FadeInUp>
 
         <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
@@ -58,45 +66,52 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
-          </PricingBox>
+          <FadeInUp delay={0.1}>
+            <PricingBox
+              packageName="Starter"
+              price={isMonthly ? "3,999" : "39,999"}
+              duration={isMonthly ? "mo" : "yr"}
+              subtitle="Perfect for small businesses and startups looking to establish an online presence."
+            >
+              <OfferList text="Business Website" status="active" />
+              <OfferList text="Basic SEO" status="active" />
+              <OfferList text="Email Support" status="active" />
+              <OfferList text="Custom Web Application" status="inactive" />
+              <OfferList text="API Integration" status="inactive" />
+              <OfferList text="AI Integration" status="inactive" />
+            </PricingBox>
+          </FadeInUp>
+          <FadeInUp delay={0.2}>
+            <PricingBox
+              packageName="Professional"
+              price={isMonthly ? "29,999" : "299,999"}
+              duration={isMonthly ? "mo" : "yr"}
+              subtitle="Ideal for growing companies needing advanced web applications and priority support."
+              isFeatured={true}
+            >
+              <OfferList text="Custom Web Application" status="active" />
+              <OfferList text="API Integration" status="active" />
+              <OfferList text="Priority Support" status="active" />
+              <OfferList text="Advanced Security" status="active" />
+              <OfferList text="Basic SEO" status="active" />
+              <OfferList text="AI Integration" status="inactive" />
+            </PricingBox>
+          </FadeInUp>
+          <FadeInUp delay={0.3}>
+            <PricingBox
+              packageName="Enterprise"
+              price={isMonthly ? "79,999" : "799,999"}
+              duration={isMonthly ? "mo" : "yr"}
+              subtitle="Comprehensive software solutions with AI, cloud deployment, and a dedicated team."
+            >
+              <OfferList text="Custom Software" status="active" />
+              <OfferList text="AI Integration" status="active" />
+              <OfferList text="Cloud Deployment" status="active" />
+              <OfferList text="Dedicated Team" status="active" />
+              <OfferList text="24/7 Premium Support" status="active" />
+              <OfferList text="Advanced Security" status="active" />
+            </PricingBox>
+          </FadeInUp>
         </div>
       </div>
 

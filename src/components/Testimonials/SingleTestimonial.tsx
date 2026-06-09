@@ -1,5 +1,7 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
+import { HoverCard } from "@/components/AnimatedWrapper";
+
 const starIcon = (
   <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
     <path d="M9.09815 0.361679L11.1054 6.06601H17.601L12.3459 9.59149L14.3532 15.2958L9.09815 11.7703L3.84309 15.2958L5.85035 9.59149L0.595291 6.06601H7.0909L9.09815 0.361679Z" />
@@ -12,31 +14,31 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   let ratingIcons = [];
   for (let index = 0; index < star; index++) {
     ratingIcons.push(
-      <span key={index} className="text-yellow">
+      <span key={index} className="text-yellow-500">
         {starIcon}
       </span>,
     );
   }
 
   return (
-    <div className="w-full">
-      <div className="shadow-two hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark rounded-xs bg-white p-8 duration-300 lg:px-5 xl:px-8">
+    <div className="w-full h-full">
+      <HoverCard className="h-full bg-white dark:bg-[#1C2136] p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-800 flex flex-col">
         <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-        <p className="border-body-color/10 text-body-color mb-8 border-b pb-8 text-base leading-relaxed dark:border-white/10 dark:text-white">
-          “{content}
+        <p className="border-body-color/10 text-body-color mb-8 border-b pb-8 text-base leading-relaxed dark:border-gray-800 dark:text-gray-400 flex-grow">
+          “{content}”
         </p>
         <div className="flex items-center">
-          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
+          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full border-2 border-primary/20">
             <Image src={image} alt={name} fill />
           </div>
           <div className="w-full">
             <h3 className="text-dark mb-1 text-lg font-semibold lg:text-base xl:text-lg dark:text-white">
               {name}
             </h3>
-            <p className="text-body-color text-sm">{designation}</p>
+            <p className="text-body-color dark:text-gray-500 text-sm">{designation}</p>
           </div>
         </div>
-      </div>
+      </HoverCard>
     </div>
   );
 };

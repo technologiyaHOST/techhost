@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FadeInUp, HoverCard } from "@/components/AnimatedWrapper";
 
 const Hero = () => {
   return (
@@ -10,31 +11,35 @@ const Hero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+              <FadeInUp className="mx-auto max-w-[800px] text-center">
+                <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-primary bg-primary/10 rounded-full border border-primary/20">
+                  AI-Powered Technology Solutions
+                </span>
+                <h1 className="mb-5 text-4xl font-extrabold leading-tight text-black dark:text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight tracking-tight">
+                  Empowering Businesses with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Innovative</span> Technology Solutions
                 </h1>
-                <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 16.x and Tailwind CSS.
+                <p className="mb-12 text-lg leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl max-w-3xl mx-auto">
+                  We help businesses accelerate growth through custom software development, AI automation, cloud infrastructure, and digital transformation services.
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    🔥 Get Pro
-                  </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
-                    Star on GitHub
-                  </Link>
+                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0">
+                  <HoverCard>
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-primary/90 hover:scale-105"
+                    >
+                      Get Started
+                    </Link>
+                  </HoverCard>
+                  <HoverCard>
+                    <Link
+                      href="/portfolio"
+                      className="inline-flex items-center justify-center rounded-full border-2 border-body-color/20 dark:border-white/20 bg-transparent px-8 py-4 text-base font-bold text-black dark:text-white transition duration-300 ease-in-out hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary"
+                    >
+                      View Portfolio
+                    </Link>
+                  </HoverCard>
                 </div>
-              </div>
+              </FadeInUp>
             </div>
           </div>
         </div>
