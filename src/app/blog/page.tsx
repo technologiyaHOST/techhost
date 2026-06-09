@@ -5,8 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Blog | TechHost Insights & Updates",
+  description: "Stay updated with the latest in cloud computing, infrastructure, and technology trends from TechHost.",
   // other metadata
 };
 
@@ -14,8 +14,8 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="TechHost Insights"
+        description="Explore our latest articles on cloud infrastructure, DevOps best practices, and the future of web hosting."
       />
 
       <section className="pt-[120px] pb-[120px]">

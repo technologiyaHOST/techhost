@@ -45,7 +45,7 @@ const Testimonials = () => {
           </div>
           <SectionTitle
             title="Trusted by Businesses Worldwide"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="Hear from startups and enterprises that have scaled their infrastructure with TechHost's reliable and secure cloud solutions."
             center
           />
         </FadeInUp>
