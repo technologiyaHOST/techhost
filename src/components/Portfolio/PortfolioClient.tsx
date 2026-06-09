@@ -18,7 +18,7 @@ const portfolioItems = [
       "40% infrastructure cost reduction",
       "3x deployment speed"
     ],
-    image: "/images/blog/blog-01.jpg"
+    image: "/images/service/fintech.webp"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const portfolioItems = [
       "25% increase in sales conversions",
       "Automated customer segmentation"
     ],
-    image: "/images/blog/blog-02.jpg"
+    image: "/images/service/CRM.webp"
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const portfolioItems = [
       "120+ countries served",
       "2 million monthly users"
     ],
-    image: "/images/blog/blog-03.jpg"
+    image: "/images/service/Ecom.webp"
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const portfolioItems = [
       "99.9% uptime",
       "Secure healthcare compliance"
     ],
-    image: "/images/blog/blog-01.jpg"
+    image: "/images/service/healthcare.webp"
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ const portfolioItems = [
       "Real-time fleet tracking",
       "Automated inventory management"
     ],
-    image: "/images/blog/blog-02.jpg"
+    image: "/images/service/supplychain.webp"
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ const portfolioItems = [
       "60% faster deployments",
       "Reduced hosting costs by 40%"
     ],
-    image: "/images/blog/blog-03.jpg"
+    image: "/images/service/saas.webp"
   }
 ];
 

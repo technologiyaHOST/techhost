@@ -5,20 +5,17 @@ const features = [
   {
     title: "Custom Software Development",
     description: "Build scalable applications designed around your business goals.",
-    imageLight: "/images/about/about-image-2.svg",
-    imageDark: "/images/about/about-image-2-dark.svg",
+    image: "/images/hero/Softwaredevelopment.webp",
   },
   {
     title: "Cloud & Infrastructure",
     description: "Deploy and scale securely using modern cloud technologies.",
-    imageLight: "/images/about/about-image.svg",
-    imageDark: "/images/about/about-image-dark.svg",
+    image: "/images/hero/Cloud infrastructure.gif",
   },
   {
     title: "AI Integration",
     description: "Leverage AI to automate workflows and improve decision-making.",
-    imageLight: "/images/about/about-image-2.svg",
-    imageDark: "/images/about/about-image-2-dark.svg",
+    image: "/images/hero/AI.webp",
   }
 ];
 
@@ -34,16 +31,10 @@ const AboutSectionTwo = () => {
                 <FadeInUp delay={0.1}>
                   <HoverCard className="relative mx-auto mb-12 aspect-25/24 max-w-[500px] text-center lg:m-0 rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
                     <Image
-                      src={feature.imageLight}
-                      alt="about image"
+                      src={feature.image}
+                      alt="feature image"
                       fill
-                      className="drop-shadow-three dark:hidden dark:drop-shadow-none object-cover"
-                    />
-                    <Image
-                      src={feature.imageDark}
-                      alt="about image"
-                      fill
-                      className="hidden drop-shadow-three dark:block dark:drop-shadow-none object-cover"
+                      className="drop-shadow-three object-contain p-4"
                     />
                   </HoverCard>
                 </FadeInUp>

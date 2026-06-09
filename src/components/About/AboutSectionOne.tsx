@@ -48,21 +48,15 @@ const AboutSectionOne = () => {
                   </div>
                 </div>
               </div>
-              </FadeInUp>
+            </FadeInUp>
 
             <FadeInUp delay={0.2} className="w-full px-4 lg:w-1/2">
               <HoverCard className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0 rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/images/hero/Softwaredevelopment.webp"
                   alt="about-image"
                   fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0 object-cover"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0 object-cover"
+                  className="mx-auto max-w-full drop-shadow-three lg:mr-0 object-contain p-4"
                 />
               </HoverCard>
             </FadeInUp>

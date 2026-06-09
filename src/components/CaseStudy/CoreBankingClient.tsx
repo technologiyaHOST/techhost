@@ -107,7 +107,7 @@ export default function CoreBankingClient() {
                 <HoverCard className="relative overflow-hidden rounded-xl shadow-2xl bg-white dark:bg-[#1C2136] border border-gray-100 dark:border-gray-800">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/blog/blog-02.jpg"
+                      src="/images/service/fintech.webp"
                       alt="Modern enterprise server room with cloud infrastructure visualization"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"

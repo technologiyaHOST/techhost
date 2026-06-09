@@ -10,7 +10,7 @@ const caseStudies = [
     title: "Modernizing Core Banking for the Cloud-First Era",
     industry: "FinTech",
     desc: "Migrated a legacy monolithic core banking platform to a highly resilient AWS microservices architecture, reducing costs by 40%.",
-    image: "/images/blog/blog-02.jpg",
+    image: "/images/service/fintech.webp",
     slug: "core-banking-modernization"
   },
   {
@@ -18,23 +18,23 @@ const caseStudies = [
     title: "Scaling a Global Payments Engine",
     industry: "FinTech",
     desc: "TechHost Core helped a leading European FinTech scale their infrastructure to handle 10x volume while reducing operational costs by 40% through a complete AWS modernization strategy.",
-    image: "/images/blog/blog-01.jpg",
+    image: "/images/service/saas.webp",
     slug: "fintech-cloud-migration"
   },
   {
-    id: 2,
+    id: 3,
     title: "Healthcare Platform Modernization",
     industry: "HealthTech",
     desc: "HIPAA-compliant system handling 500k+ patients with real-time health monitoring and secure telehealth capabilities.",
-    image: "/images/blog/blog-02.jpg",
+    image: "/images/service/healthcare.webp",
     slug: "healthcare-platform"
   },
   {
-    id: 3,
+    id: 4,
     title: "AI-Powered Customer Analytics",
     industry: "Retail SaaS",
     desc: "Predictive analytics platform improving customer retention by 32% and automating intelligent segmentation.",
-    image: "/images/blog/blog-03.jpg",
+    image: "/images/service/CRM.webp",
     slug: "ai-analytics"
   }
 ];

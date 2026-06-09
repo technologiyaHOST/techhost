@@ -77,19 +77,19 @@ const relatedCases = [
     title: "Healthcare Platform Modernization",
     industry: "HealthTech",
     desc: "HIPAA-compliant system handling 500k+ patients.",
-    image: "/images/blog/blog-01.jpg"
+    image: "/images/service/healthcare.webp"
   },
   {
     title: "AI-Powered Customer Analytics",
     industry: "Retail SaaS",
     desc: "Predictive analytics improving retention by 32%.",
-    image: "/images/blog/blog-02.jpg"
+    image: "/images/service/CRM.webp"
   },
   {
     title: "Enterprise SaaS Transformation",
     industry: "Logistics",
     desc: "Optimized route planning reducing costs by 28%.",
-    image: "/images/blog/blog-03.jpg"
+    image: "/images/service/supplychain.webp"
   }
 ];
 
@@ -132,7 +132,7 @@ export default function FinTechClient() {
                 <HoverCard className="relative overflow-hidden rounded-3xl shadow-2xl bg-white dark:bg-[#1C2136] border-4 border-white dark:border-gray-800">
                   <div className="relative aspect-[4/3] w-full">
                     <Image
-                      src="/images/blog/blog-01.jpg"
+                      src="/images/service/saas.webp"
                       alt="Project Overview"
                       fill
                       className="object-cover"

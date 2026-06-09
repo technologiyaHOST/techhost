@@ -12,9 +12,9 @@ export default function Video() {
         <div className="container">
           <FadeInUp>
             <div className="text-center mb-6">
-               <span className="inline-block px-4 py-1.5 text-sm font-semibold tracking-wider text-primary bg-primary/10 rounded-full border border-primary/20">
-                 Why Choose TechHost
-               </span>
+              <span className="inline-block px-4 py-1.5 text-sm font-semibold tracking-wider text-primary bg-primary/10 rounded-full border border-primary/20">
+                Why Choose TechHost
+              </span>
             </div>
             <SectionTitle
               title="We Build Solutions That Drive Business Growth"
@@ -31,8 +31,8 @@ export default function Video() {
                 <HoverCard className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white dark:border-gray-800">
                   <div className="relative aspect-[16/9] w-full">
                     <Image
-                      src="/images/techhost-team.jpg"
-                      alt="TechHost Team"
+                      src="/images/video/image.png"
+                      alt="TechHost Video"
                       fill
                       className="object-cover transition duration-500 group-hover:scale-105"
                     />
