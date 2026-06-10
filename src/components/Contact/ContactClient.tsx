@@ -134,7 +134,7 @@ export default function ContactClient() {
                       </div>
                       <div>
                         <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Office Address</h4>
-                        <p className="text-lg font-bold text-dark dark:text-white leading-relaxed">123 Cloud Avenue<br/>Tech City, TC 90210</p>
+                        <p className="text-lg font-bold text-dark dark:text-white leading-relaxed">Vasant Kunj, New Delhi - 110070</p>
                       </div>
                     </div>
 
