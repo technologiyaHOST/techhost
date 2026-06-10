@@ -34,7 +34,7 @@ const Footer = () => {
                   </a>
 
                   {/* Email */}
-                  <a href="mailto:hello@techhost.com" aria-label="Email" className="text-body-color hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors">
+                  <a href="mailto:info@techhost.site" aria-label="Email" className="text-body-color hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                       <polyline points="22,6 12,13 2,6" />
@@ -119,7 +119,7 @@ const Footer = () => {
                     <span className="w-6 flex-shrink-0 text-primary">
                       <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </span>
-                    <a href="mailto:hello@techhost.com" className="hover:text-primary transition-colors">hello@techhost.com</a>
+                    <a href="mailto:info@techhost.site" className="hover:text-primary transition-colors">info@techhost.site</a>
                   </li>
                   <li className="flex text-sm font-medium text-body-color dark:text-gray-400">
                     <span className="w-6 flex-shrink-0 text-primary">

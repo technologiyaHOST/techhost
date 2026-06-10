@@ -43,7 +43,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="mb-1 text-lg font-semibold text-dark dark:text-white">Email Address</h4>
-                    <p className="text-body-color dark:text-gray-400">hello@techhost.com</p>
+                    <p className="text-body-color dark:text-gray-400">info@techhost.site</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

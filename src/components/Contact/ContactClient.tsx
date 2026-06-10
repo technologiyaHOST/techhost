@@ -114,7 +114,7 @@ export default function ContactClient() {
                       </div>
                       <div>
                         <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Email</h4>
-                        <a href="mailto:hello@techhost.com" className="text-lg font-bold text-dark dark:text-white hover:text-primary transition-colors">hello@techhost.com</a>
+                        <a href="mailto:info@techhost.site" className="text-lg font-bold text-dark dark:text-white hover:text-primary transition-colors">info@techhost.site</a>
                       </div>
                     </div>
 
